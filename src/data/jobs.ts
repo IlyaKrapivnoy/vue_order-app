@@ -3,7 +3,7 @@ import Job from '@/types/Job';
 const jobs: Job[] = [
   {
     title: 'JavaScript Developer',
-    location: 'lisbon, Portugal',
+    location: 'Lisbon, Portugal',
     salary: 50600,
     id: '1',
   },
