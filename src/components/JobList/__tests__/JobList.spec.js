@@ -23,5 +23,8 @@ describe('JobList.vue', () => {
     );
     expect(jobTitles[1].text()).toBe('React Developer in Berlin, Germany');
     expect(jobTitles[2].text()).toBe('Vue Developer in Porto, Portugal');
+
+    // Use Jest's toMatchSnapshot to create a snapshot
+    expect(wrapper.html()).toMatchSnapshot();
   });
 });

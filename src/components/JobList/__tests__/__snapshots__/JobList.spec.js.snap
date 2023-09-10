@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobList.vue renders ordered job list 1`] = `
+<div class="job-list">
+  <p>Ordered by title</p>
+  <ul>
+    <li>
+      <h2>JavaScript Developer in Lisbon, Portugal</h2>
+      <div class="salary">
+        <p>50600 euro</p>
+      </div>
+      <div class="description">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur et hic, magnam minus natus quae? Aspernatur dolor illum, in laudantium libero maiores minima officiis quas quidem quod, veniam voluptate. </p>
+      </div>
+    </li>
+    <li>
+      <h2>React Developer in Berlin, Germany</h2>
+      <div class="salary">
+        <p>40500 euro</p>
+      </div>
+      <div class="description">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur et hic, magnam minus natus quae? Aspernatur dolor illum, in laudantium libero maiores minima officiis quas quidem quod, veniam voluptate. </p>
+      </div>
+    </li>
+    <li>
+      <h2>Vue Developer in Porto, Portugal</h2>
+      <div class="salary">
+        <p>40200 euro</p>
+      </div>
+      <div class="description">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur et hic, magnam minus natus quae? Aspernatur dolor illum, in laudantium libero maiores minima officiis quas quidem quod, veniam voluptate. </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
