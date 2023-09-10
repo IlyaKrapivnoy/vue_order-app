@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <header>
+      <img src="./assets/logo.webp" alt="site logo" />
       <div class="order">
         <button @click="handleClick('title')">Order by title</button>
         <button @click="handleClick('salary')">Order by salary</button>
@@ -73,5 +74,10 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+  }
+
+  header img {
+    width: 300px;
+    margin: 40px 0 20px;
   }
 </style>
