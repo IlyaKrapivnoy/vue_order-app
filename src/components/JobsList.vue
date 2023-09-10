@@ -8,7 +8,7 @@
           <p>{{ job.salary }} euro</p>
         </div>
 
-        <div class="descriotion">
+        <div class="description">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
             aspernatur et hic, magnam minus natus quae? Aspernatur dolor illum,
@@ -21,30 +21,26 @@
   </div>
 </template>
 
-<script lang="ts">
-  import { computed, defineComponent, PropType } from 'vue';
+<script setup lang="ts">
+  import { computed, PropType, defineProps } from 'vue';
   import Job from '@/types/Job';
-  import OrderTerm from '@/types/OderTerm';
+  import OrderTerm from '../types/OderTerm';
 
-  export default defineComponent({
-    props: {
-      jobs: {
-        required: true,
-        type: Array as PropType<Job[]>,
-      },
-      order: {
-        required: true,
-        type: String as PropType<OrderTerm>,
-      },
+  const props = defineProps({
+    jobs: {
+      required: true,
+      type: Array as PropType<Job[]>,
     },
-    setup(props) {
-      const orderedJobs = computed(() => {
-        return [...props.jobs].sort((a: Job, b: Job) => {
-          return a[props.order] > b[props.order] ? 1 : -1;
-        });
-      });
-      return { orderedJobs };
+    order: {
+      required: true,
+      type: String as PropType<OrderTerm>,
     },
+  });
+
+  const orderedJobs = computed(() => {
+    return [...props.jobs].sort((a: Job, b: Job) => {
+      return a[props.order] > b[props.order] ? 1 : -1;
+    });
   });
 </script>
 
