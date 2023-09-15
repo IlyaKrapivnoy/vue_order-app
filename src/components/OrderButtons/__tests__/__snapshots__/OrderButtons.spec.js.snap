@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderButtons.vue matches the snapshot 1`] = `<div class="order"><button> Order by location</button><button> Order by title</button><button> Order by salary</button></div>`;

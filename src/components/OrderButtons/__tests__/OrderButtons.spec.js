@@ -2,6 +2,11 @@ import { mount } from '@vue/test-utils';
 import OrderButtons from '@/components/OrderButtons/OrderButtons.vue';
 
 describe('OrderButtons.vue', () => {
+  it('matches the snapshot', () => {
+    const wrapper = mount(OrderButtons);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
   it('emits the "onOrderClick" event when a button is clicked', async () => {
     const wrapper = mount(OrderButtons);
 
