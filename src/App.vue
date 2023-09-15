@@ -27,10 +27,6 @@
     text-align: center;
   }
 
-  header .order {
-    margin-top: 20px;
-  }
-
   button {
     margin: 0 10px;
     color: #1195c9;
