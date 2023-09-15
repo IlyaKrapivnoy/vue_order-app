@@ -2,11 +2,7 @@
   <div class="app">
     <header>
       <img src="./assets/logo.webp" alt="site logo" />
-      <div class="order">
-        <button @click="handleClick('title')">Order by title</button>
-        <button @click="handleClick('salary')">Order by salary</button>
-        <button @click="handleClick('location')">Order by location</button>
-      </div>
+      <OrderButtons @onOrderClick="handleClick" />
     </header>
     <JobsList :jobs="jobs" :order="order" />
   </div>
@@ -17,6 +13,7 @@
   import JobsList from '@/components/JobList/JobsList.vue';
   import OrderTerm from '@/types/OderTerm';
   import jobs from '@/data/jobs';
+  import OrderButtons from '@/components/OrderButtons/OrderButtons.vue';
 
   const order = ref<OrderTerm>('title');
 
