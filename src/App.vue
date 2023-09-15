@@ -1,13 +1,6 @@
 <template>
   <div class="app">
-    <header>
-      <img src="./assets/logo.webp" alt="site logo" />
-      <div class="order">
-        <button @click="handleClick('title')">Order by title</button>
-        <button @click="handleClick('salary')">Order by salary</button>
-        <button @click="handleClick('location')">Order by location</button>
-      </div>
-    </header>
+    <HeaderView :handleClick="handleClick" />
     <JobsList :jobs="jobs" :order="order" />
   </div>
 </template>
@@ -17,6 +10,7 @@
   import JobsList from '@/components/JobList/JobsList.vue';
   import OrderTerm from '@/types/OderTerm';
   import jobs from '@/data/jobs';
+  import HeaderView from '@/components/Header/HeaderView.vue';
 
   const order = ref<OrderTerm>('title');
 
@@ -26,14 +20,6 @@
 </script>
 
 <style>
-  header {
-    text-align: center;
-  }
-
-  header .order {
-    margin-top: 20px;
-  }
-
   button {
     margin: 0 10px;
     color: #1195c9;
@@ -43,10 +29,5 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-  }
-
-  header img {
-    width: 300px;
-    margin: 40px 0 20px;
   }
 </style>

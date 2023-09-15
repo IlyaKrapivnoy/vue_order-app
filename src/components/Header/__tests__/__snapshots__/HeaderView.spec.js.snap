@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderView.vue matches the snapshot 1`] = `
+<header><img alt="site logo">
+  <div class="order"><button class=""> Order by location</button><button class="active"> Order by title</button><button class=""> Order by salary</button></div>
+</header>
+`;
