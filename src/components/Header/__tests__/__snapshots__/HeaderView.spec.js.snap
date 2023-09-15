@@ -2,6 +2,6 @@
 
 exports[`HeaderView.vue matches the snapshot 1`] = `
 <header><img alt="site logo">
-  <div class="order"><button> Order by location</button><button> Order by title</button><button> Order by salary</button></div>
+  <div class="order"><button class=""> Order by location</button><button class="active"> Order by title</button><button class=""> Order by salary</button></div>
 </header>
 `;
